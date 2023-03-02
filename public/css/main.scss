@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+@import 'helpers.css';
+* {
+    font-family: 'Open Sans', sans-serif;
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+#app{
+    margin-top:15px;
+}
+$primary-color: #4D455D;
+$secondary-color:  #F5E9CF;
+$tertiary-color: #7DB9B6;
+$danger-color: #E96479;
+
+.divider{
+    border-top:4px solid $primary-color;
+}
+
+.box {
+    border: 1px solid;
+    box-shadow: 2px 3px; 
+}
+
+.box-btn{
+    @extend .box;
+    cursor: pointer;
+    width: fit-content;
+    padding:5px 8px;
+    transition: all 0.3s;
+}
+.box-btn a{
+    text-decoration: none;
+    color:inherit;
+}
+.box-btn-primary {
+    @extend .box-btn;
+    color: $primary-color;
+}
+.box-btn-tertiary {
+    @extend .box-btn;
+    color: $tertiary-color;
+}
+.box-btn-red {
+    @extend .box-btn;
+    color: $danger-color;
+}
+.box-btn:hover  {
+    box-shadow: 5px 7px; 
+}
+button {
+    background-color: transparent;
+}
+
+.card {
+    @extend .box;
+    display: inline-flex;
+    margin-right:12px;
+    margin-bottom:12px;
+    transition:all 0.5s;
+    width:140px;
+    height:160px;
+}
+.card-content {
+    width: 100%;
+    padding:8px;
+    position: relative;
+}
+.card-content .checkbox {
+   position:absolute; 
+   top:8px; 
+   right:8px;
+}
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.card-footer{
+    display: grid; 
+    justify-content: space-evenly;
+    align-content: baseline;
+    position: absolute;
+    bottom:8px;
+    left:8px;
+}
+.card.title{
+    color: $primary-color;
+}
+.card .attributes{
+    font-size: 0.8em;
+}
+.caption {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: $tertiary-color;
+}
+
+input[type="checkbox"]{
+  background-color: #fff;
+  cursor: pointer;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+#product_form input, #product_form select{
+    @extend .box;
+    padding: 12px;
+    margin:8px;
+    border-radius: 0px;
+}
+#product_form input:focus, #product_form select:focus{
+    box-shadow: none; 
+}
+.productType-enter-active,
+.productType-leave-active {
+  transition: all 0.5s ease;
+}
+.productType-enter-from,
+.productType-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.input-error {
+    font-size: 0.7em;
+    color:$danger-color;
+}

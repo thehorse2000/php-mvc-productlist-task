@@ -1,0 +1,41 @@
+
+.mt-8{
+  margin-top:8px;
+}
+.mb-8{
+  margin-bottom:8px;
+}
+.ma-4{
+  margin:4px;
+}
+.mr-4{
+  margin-right: 4px;
+}
+.mr-8{
+  margin-right: 8px;
+}
+.my-4{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.container {
+  width:90%;
+  margin:0 auto;
+}
+.ml-auto{
+  margin: 0 auto;
+}
+.mr-auto{
+  margin: 0 auto;
+}
+
+.position-right{
+  display:flex;
+  justify-content: end;
+}
