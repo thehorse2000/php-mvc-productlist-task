@@ -10,4 +10,5 @@ Tools used:
 - I followed PSR-1 & PSR-12 recommendations
 
 ** To run the project, All you need to do is change the DB credentials in app/utils/database.php and you should be good to GO.
+
 ** This task is made specifically to be reviewed by Scandiweb team.
